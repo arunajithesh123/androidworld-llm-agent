@@ -59,7 +59,7 @@ try:
     from android_world.env import env_launcher
     from android_world.agents import infer
 except ImportError as e:
-    print("❌ AndroidWorld not installed properly!")
+    print(" AndroidWorld not installed properly!")
     sys.exit(1)
 
 # LLM imports
@@ -67,7 +67,7 @@ try:
     import openai
     from pydantic import BaseModel, Field
 except ImportError:
-    print("❌ Required libraries not installed!")
+    print(" Required libraries not installed!")
     print("Run: pip install openai pydantic")
     sys.exit(1)
 
@@ -347,10 +347,10 @@ class ProgressVisualizer:
         
         confidence_color = "green" if confidence > 0.8 else "yellow" if confidence > 0.5 else "red"
         
-        step_table.add_row("🎬 Action", action)
-        step_table.add_row("💭 Reasoning", reasoning[:80] + "..." if len(reasoning) > 80 else reasoning)
-        step_table.add_row("📊 Confidence", Text(f"{confidence:.2f}", style=confidence_color))
-        step_table.add_row("⏱️ Time", f"{execution_time:.2f}s")
+        step_table.add_row(" Action", action)
+        step_table.add_row(" Reasoning", reasoning[:80] + "..." if len(reasoning) > 80 else reasoning)
+        step_table.add_row(" Confidence", Text(f"{confidence:.2f}", style=confidence_color))
+        step_table.add_row(" Time", f"{execution_time:.2f}s")
         
         self.console.print(Panel(step_table, title=f"Step {step_num} Details", border_style="green"))
     
@@ -369,28 +369,28 @@ class ProgressVisualizer:
         summary_table.add_column("Metric", style="bold blue")
         summary_table.add_column("Value", style="white")
         
-        summary_table.add_row("🎯 Status", Text(f"{status_icon} {status_text}", style=status_color))
-        summary_table.add_row("📊 Steps Taken", str(len(self.step_data)))
-        summary_table.add_row("⏱️ Total Time", f"{total_time:.2f}s")
+        summary_table.add_row("Status", Text(f"{status_icon} {status_text}", style=status_color))
+        summary_table.add_row(" Steps Taken", str(len(self.step_data)))
+        summary_table.add_row(" Total Time", f"{total_time:.2f}s")
         
         if self.step_data:
             avg_confidence = sum(step["confidence"] for step in self.step_data) / len(self.step_data)
-            summary_table.add_row("📈 Avg Confidence", f"{avg_confidence:.2f}")
+            summary_table.add_row("Avg Confidence", f"{avg_confidence:.2f}")
         
         self.console.print(Panel(summary_table, title="🏁 Episode Complete", border_style=status_color))
         
         # Show action sequence tree
         if self.step_data:
-            action_tree = Tree("🎬 Action Sequence")
+            action_tree = Tree("Action Sequence")
             
             for step in self.step_data:
                 confidence_color = "green" if step["confidence"] > 0.8 else "yellow" if step["confidence"] > 0.5 else "red"
                 step_text = f"Step {step['step']}: {step['action']}"
                 
                 step_node = action_tree.add(Text(step_text, style="bold"))
-                step_node.add(f"💭 {step['reasoning']}")
-                step_node.add(Text(f"📊 {step['confidence']:.2f}", style=confidence_color))
-                step_node.add(f"⏱️ {step['execution_time']:.2f}s")
+                step_node.add(f" {step['reasoning']}")
+                step_node.add(Text(f" {step['confidence']:.2f}", style=confidence_color))
+                step_node.add(f" {step['execution_time']:.2f}s")
             
             self.console.print(action_tree)
 
@@ -417,12 +417,12 @@ class MultiModelComparator:
         results = {}
         
         if self.visualize:
-            console.print(Panel(f"🚀 Starting multi-model comparison\n🎯 Task: {task_name}\n📋 Models: {list(self.models.keys())}", 
+            console.print(Panel(f" Starting multi-model comparison\n Task: {task_name}\n Models: {list(self.models.keys())}", 
                               title="Model Comparison", border_style="magenta"))
         
         for model_name, client in self.models.items():
             if self.visualize:
-                console.print(f"\n[bold blue]🤖 Running {model_name}...[/bold blue]")
+                console.print(f"\n[bold blue] Running {model_name}...[/bold blue]")
             
             # Start visualization for this model
             if self.visualize:
@@ -525,7 +525,7 @@ Action:"""
                 
                 if self.visualize:
                     progress.stop()
-                    console.print(f"[red]❌ Error in {model_name}: {e}[/red]")
+                    console.print(f"[red] Error in {model_name}: {e}[/red]")
             
             results[model_name] = model_result
         
@@ -538,7 +538,7 @@ Action:"""
     def _show_comparison_summary(self, results: Dict[str, Any]):
         """Show comparison summary with Rich."""
         
-        summary_table = Table(title="🏆 Model Comparison Summary", box=box.ROUNDED)
+        summary_table = Table(title=" Model Comparison Summary", box=box.ROUNDED)
         summary_table.add_column("Model", style="bold blue")
         summary_table.add_column("Success", justify="center")
         summary_table.add_column("Actions", justify="center")
@@ -550,7 +550,7 @@ Action:"""
             if 'error' in result:
                 summary_table.add_row(
                     model_name, 
-                    "❌ Error", 
+                    " Error", 
                     "-", "-", "-", 
                     Text("Failed", style="red")
                 )
@@ -568,11 +568,11 @@ Action:"""
             
             # Performance rating
             if result.get('success', False) and avg_confidence > 0.8 and exec_time < 5:
-                performance = Text("⭐ Excellent", style="green")
+                performance = Text(" Excellent", style="green")
             elif result.get('success', False):
-                performance = Text("👍 Good", style="yellow")
+                performance = Text(" Good", style="yellow")
             else:
-                performance = Text("👎 Poor", style="red")
+                performance = Text(" Poor", style="red")
             
             summary_table.add_row(
                 model_name,
@@ -604,11 +604,11 @@ class AdvancedEpisodeRunner:
             self.task_registry = registry.TaskRegistry()
             self.aw_registry = self.task_registry.get_registry(self.task_registry.ANDROID_WORLD_FAMILY)
             if self.visualize:
-                console.print("[green]✅ AndroidWorld registry initialized[/green]")
+                console.print("[green] AndroidWorld registry initialized[/green]")
             return True
         except Exception as e:
             if self.visualize:
-                console.print(f"[red]❌ Failed to initialize registry: {e}[/red]")
+                console.print(f"[red] Failed to initialize registry: {e}[/red]")
             return False
     
     def setup_models(self):
@@ -769,7 +769,7 @@ Next action:"""
             except Exception as e:
                 if self.visualize:
                     progress.stop()
-                    console.print(f"[red]❌ Error during episode: {e}[/red]")
+                    console.print(f"[red] Error during episode: {e}[/red]")
                 return {"error": str(e)}
             
             result.update({
@@ -809,7 +809,7 @@ def create_streamlit_dashboard():
     """Create Streamlit dashboard for episode monitoring."""
     
     if not STREAMLIT_AVAILABLE:
-        console.print("[red]❌ Streamlit not available. Install with: pip install streamlit plotly[/red]")
+        console.print("[red] Streamlit not available. Install with: pip install streamlit plotly[/red]")
         return
     
     st.set_page_config(
@@ -818,11 +818,11 @@ def create_streamlit_dashboard():
         layout="wide"
     )
     
-    st.title("🤖 AndroidWorld Episode Progress Monitor")
+    st.title(" AndroidWorld Episode Progress Monitor")
     st.markdown("Real-time visualization of LLM agent episodes")
     
     # Sidebar
-    st.sidebar.header("🎛️ Controls")
+    st.sidebar.header(" Controls")
     
     # File upload
     uploaded_file = st.sidebar.file_uploader(
@@ -890,12 +890,12 @@ def create_streamlit_dashboard():
                         st.plotly_chart(fig_time, use_container_width=True)
                     
                     # Data table
-                    st.subheader("📊 Detailed Comparison")
+                    st.subheader(" Detailed Comparison")
                     st.dataframe(df, use_container_width=True)
             
             # Single episode visualization
             elif 'actions' in data:
-                st.subheader("🎬 Episode Timeline")
+                st.subheader(" Episode Timeline")
                 
                 actions = data.get('actions', [])
                 reasoning = data.get('reasoning', [])
@@ -918,7 +918,7 @@ def create_streamlit_dashboard():
             
             # Memory information
             if data.get('memory_used', False):
-                st.subheader("🧠 Memory Information")
+                st.subheader(" Memory Information")
                 col1, col2 = st.columns(2)
                 
                 with col1:
@@ -928,17 +928,17 @@ def create_streamlit_dashboard():
                     st.metric("Total Time", f"{data.get('total_time', 0):.2f}s")
             
             # Raw data
-            with st.expander("🔍 Raw Episode Data"):
+            with st.expander(" Raw Episode Data"):
                 st.json(data)
                 
         except Exception as e:
             st.error(f"Error loading file: {e}")
     
     else:
-        st.info("👆 Upload an episode results file to visualize progress")
+        st.info(" Upload an episode results file to visualize progress")
         
         # Show sample dashboard
-        st.subheader("📊 Sample Dashboard")
+        st.subheader(" Sample Dashboard")
         st.write("This is what the dashboard looks like with episode data:")
         
         # Sample metrics
@@ -969,11 +969,11 @@ def main():
     
     if args.mode == 'dashboard':
         if STREAMLIT_AVAILABLE:
-            console.print("🚀 Starting Streamlit dashboard...")
+            console.print(" Starting Streamlit dashboard...")
             console.print("Access at: http://localhost:8501")
             create_streamlit_dashboard()
         else:
-            console.print("[red]❌ Streamlit not available. Install with: pip install streamlit plotly[/red]")
+            console.print("[red] Streamlit not available. Install with: pip install streamlit plotly[/red]")
         return
     
     # Initialize runner with/without visualization
@@ -996,7 +996,7 @@ def main():
         json.dump(result, f, indent=2, default=str)
     
     if visualize:
-        console.print(f"\n[green]💾 Results saved to: {args.output}[/green]")
+        console.print(f"\n[green] Results saved to: {args.output}[/green]")
         
         # Show final summary without visualization details
         if 'model_comparison' in result:
@@ -1011,7 +1011,7 @@ def main():
             total_time = result.get('total_time', 0)
             actions_count = len(result.get('actions', []))
             
-            console.print("\n[bold magenta]📈 Episode Summary:[/bold magenta]")
+            console.print("\n[bold magenta] Episode Summary:[/bold magenta]")
             console.print(f"  Success: {'✅' if success else '❌'}")
             console.print(f"  Actions: {actions_count}")
             console.print(f"  Time: {total_time:.2f}s")

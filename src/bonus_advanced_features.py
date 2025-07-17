@@ -33,7 +33,7 @@ try:
     from android_world.env import env_launcher
     from android_world.agents import infer
 except ImportError as e:
-    print("❌ AndroidWorld not installed properly!")
+    print("AndroidWorld not installed properly!")
     sys.exit(1)
 
 # LLM imports
@@ -41,7 +41,7 @@ try:
     import openai
     from pydantic import BaseModel, Field
 except ImportError:
-    print("❌ Required libraries not installed!")
+    print("Required libraries not installed!")
     print("Run: pip install openai pydantic")
     sys.exit(1)
 
@@ -452,10 +452,10 @@ class AdvancedEpisodeRunner:
         try:
             self.task_registry = registry.TaskRegistry()
             self.aw_registry = self.task_registry.get_registry(self.task_registry.ANDROID_WORLD_FAMILY)
-            logger.info("✅ AndroidWorld registry initialized")
+            logger.info(" AndroidWorld registry initialized")
             return True
         except Exception as e:
-            logger.error(f"❌ Failed to initialize registry: {e}")
+            logger.error(f" Failed to initialize registry: {e}")
             return False
     
     def setup_models(self):
@@ -620,17 +620,17 @@ def main():
     runner = AdvancedEpisodeRunner()
     
     if args.mode == 'compare' or args.compare_models:
-        print(f"🤖 Running model comparison on {args.task}")
+        print(f" Running model comparison on {args.task}")
         runner.setup_models()
         result = runner.run_advanced_episode(args.task, args.use_memory, compare_models=True)
     else:
-        print(f"🎯 Running single episode: {args.task}")
+        print(f" Running single episode: {args.task}")
         print(f"Memory enabled: {args.use_memory}")
         result = runner.run_advanced_episode(args.task, args.use_memory, compare_models=False)
     
     # Print results
     print(f"\n{'='*60}")
-    print(f"📊 ADVANCED EPISODE RESULTS")
+    print(f" ADVANCED EPISODE RESULTS")
     print(f"{'='*60}")
     
     if 'model_comparison' in result:
@@ -649,7 +649,7 @@ def main():
                 print(f"    Sample Actions: {model_result['actions'][:2]}...")
         
         if 'aggregated_stats' in result:
-            print(f"\n📈 Aggregated Statistics:")
+            print(f"\n Aggregated Statistics:")
             for model, stats in result['aggregated_stats'].items():
                 print(f"  {model}: {stats.get('success_rate', 0):.2%} success rate")
     
@@ -660,28 +660,28 @@ def main():
         print(f"Actions Taken: {len(result.get('actions', []))}")
         
         if result.get('actions'):
-            print(f"\n📝 Action Sequence:")
+            print(f"\n Action Sequence:")
             for i, action in enumerate(result['actions'], 1):
                 reasoning = result.get('reasoning', [''])[i-1] if i-1 < len(result.get('reasoning', [])) else ''
                 print(f"  {i}. {action}")
                 if reasoning and reasoning != "Basic LLM response":
-                    print(f"     💭 Reasoning: {reasoning[:100]}...")
+                    print(f"      Reasoning: {reasoning[:100]}...")
     
     # Save results
     with open(args.output, 'w') as f:
         json.dump(result, f, indent=2, default=str)
-    print(f"\n💾 Results saved to: {args.output}")
+    print(f"\n Results saved to: {args.output}")
     
     # Memory summary
     if args.use_memory and hasattr(runner, 'memory_buffer'):
         memory = runner.memory_buffer
-        print(f"\n🧠 Memory Summary:")
+        print(f"\n Memory Summary:")
         print(f"  Episodic Memory: {len(memory.episodic_memory)} entries")
         print(f"  Semantic Insights: {len(memory.semantic_memory)} categories")
         print(f"  Recorded Errors: {len(memory.error_memory)} entries")
         
         if memory.semantic_memory:
-            print(f"  📚 Learned Insights:")
+            print(f"   Learned Insights:")
             for key, insights in memory.semantic_memory.items():
                 latest = insights[-1]['insight']
                 print(f"    {key}: {latest}")
