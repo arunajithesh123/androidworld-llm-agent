@@ -358,7 +358,7 @@ Options:
 - `visualizations/*.png` - Performance charts
 - `detailed_episodes` - Step-by-step breakdowns
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please see our contributing guidelines:
 
@@ -419,8 +419,3 @@ If you use this work in your research, please cite:
 
 ---
 
-⭐ **Star this repo** if you find it useful! 
-
-🐛 **Found a bug?** [Open an issue](https://github.com/yourusername/androidworld-llm-agent/issues/new)
-
-💡 **Have an idea?** [Start a discussion](https://github.com/yourusername/androidworld-llm-agent/discussions/new)
