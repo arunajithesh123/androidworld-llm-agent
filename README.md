@@ -1,4 +1,4 @@
-# AndroidWorld LLM Agent 🤖📱
+# AndroidWorld LLM Agent 
 
 A comprehensive framework for evaluating Large Language Model (LLM) agents in mobile automation tasks using the AndroidWorld benchmark environment.
 
@@ -342,7 +342,7 @@ Options:
   --no-visualization                  Disable rich output
 ```
 
-## 📈 Understanding Results
+##  Understanding Results
 
 ### Metrics Explained
 
@@ -384,18 +384,18 @@ flake8 .
 mypy .
 ```
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **AndroidWorld Team** - For the excellent benchmark environment
 - **OpenAI & Anthropic** - For powerful LLM APIs
 - **Rich Library** - For beautiful CLI visualizations
 - **Contributors** - For making this project better
 
-## 📚 Citation
+##  Citation
 
 If you use this work in your research, please cite:
 
@@ -408,17 +408,14 @@ If you use this work in your research, please cite:
 }
 ```
 
-## 🔗 Related Work
+##  Related Work
 
 - [AndroidWorld Benchmark](https://github.com/android-world/android-world)
 - [LLM Mobile Automation Survey](https://arxiv.org/abs/...)
 - [Mobile Agent Evaluation Methods](https://arxiv.org/abs/...)
 
-## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/androidworld-llm-agent/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/androidworld-llm-agent/discussions)
-- **Email**: your.email@domain.com
+
 
 ---
 
