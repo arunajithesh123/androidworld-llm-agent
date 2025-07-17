@@ -1,0 +1,263 @@
+{
+  "summary": {
+    "total_episodes": 10,
+    "overall_step_accuracy": 0.875,
+    "overall_success_rate": 1.0,
+    "tasks_evaluated": [
+      "ContactsAddContact"
+    ],
+    "prompt_types_tested": [
+      "few_shot",
+      "self_reflection"
+    ],
+    "failed_tasks": 0
+  },
+  "episodes": [
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Santiago Chen. Their number is +16062561135.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Santiago Chen\")",
+        "TYPE(\"+16062561135\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Santiago Chen\")",
+        "TYPE(\"+16062561135\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 4.475265979766846,
+      "prompt_type": "few_shot",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Fatima Ahmed. Their number is +12949252821.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Fatima\")",
+        "TYPE(\"+12949252821\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Fatima Ahmed\")",
+        "TYPE(\"+12949252821\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 4,
+      "execution_time": 4.62888503074646,
+      "prompt_type": "few_shot",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Camila Ali. Their number is +18540670654.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Camila\")",
+        "TYPE(\"+18540670654\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Camila Ali\")",
+        "TYPE(\"+18540670654\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 4,
+      "execution_time": 5.423362970352173,
+      "prompt_type": "few_shot",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Carlos Wang. Their number is +15352858430.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Carlos\")",
+        "TYPE(\"+15352858430\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Carlos Wang\")",
+        "TYPE(\"+15352858430\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 4,
+      "execution_time": 2.9135360717773438,
+      "prompt_type": "few_shot",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Ana Zhang. Their number is +12771418199.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Ana\")",
+        "TYPE(\"+12771418199\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Ana Zhang\")",
+        "TYPE(\"+12771418199\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 0.75,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 3,
+      "execution_time": 3.15128493309021,
+      "prompt_type": "few_shot",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for William Gonzalez. Their number is +14625927490.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"William\")",
+        "TYPE(\"+14625927490\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"William Gonzalez\")",
+        "TYPE(\"+14625927490\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 0.75,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 3,
+      "execution_time": 12.472393274307251,
+      "prompt_type": "self_reflection",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for William Mohammed. Their number is +11289449237.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"William\")",
+        "TYPE(\"+11289449237\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"William Mohammed\")",
+        "TYPE(\"+11289449237\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 0.75,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 3,
+      "execution_time": 12.202521085739136,
+      "prompt_type": "self_reflection",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Miguel Ali. Their number is +19577832091.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Miguel\")",
+        "TYPE(\"+19577832091\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Miguel Ali\")",
+        "TYPE(\"+19577832091\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 4,
+      "execution_time": 10.098864793777466,
+      "prompt_type": "self_reflection",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Valentina Mohammed. Their number is +12366927905.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Valentina\")",
+        "TYPE(\"+12366927905\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Valentina Mohammed\")",
+        "TYPE(\"+12366927905\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 0.75,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 3,
+      "execution_time": 11.25350308418274,
+      "prompt_type": "self_reflection",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Amelia Hernandez. Their number is +11949827179.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Amelia\")",
+        "TYPE(\"+11949827179\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Amelia Hernandez\")",
+        "TYPE(\"+11949827179\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 0.75,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 3,
+      "execution_time": 10.167200803756714,
+      "prompt_type": "self_reflection",
+      "error": null
+    }
+  ],
+  "prompt_comparison": {
+    "few_shot": {
+      "avg_step_accuracy": 0.95,
+      "episode_success_rate": 1.0,
+      "avg_execution_time": 4.118466997146607,
+      "total_episodes": 5,
+      "failed_episodes": 0
+    },
+    "self_reflection": {
+      "avg_step_accuracy": 0.8,
+      "episode_success_rate": 1.0,
+      "avg_execution_time": 11.238896608352661,
+      "total_episodes": 5,
+      "failed_episodes": 0
+    }
+  }
+}

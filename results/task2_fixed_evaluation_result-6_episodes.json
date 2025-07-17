@@ -1,0 +1,171 @@
+{
+  "summary": {
+    "total_episodes": 6,
+    "overall_step_accuracy": 0.9166666666666666,
+    "overall_success_rate": 1.0,
+    "tasks_evaluated": [
+      "ContactsAddContact"
+    ],
+    "prompt_types_tested": [
+      "few_shot",
+      "self_reflection"
+    ],
+    "failed_tasks": 0
+  },
+  "episodes": [
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Juan Chen. Their number is +12236331407.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Juan\")",
+        "TYPE(\"+12236331407\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Juan Chen\")",
+        "TYPE(\"+12236331407\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 4,
+      "execution_time": 3.8128929138183594,
+      "prompt_type": "few_shot",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Gabriel Garcia. Their number is +19199215439.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Gabriel\")",
+        "TYPE(\"+19199215439\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Gabriel Garcia\")",
+        "TYPE(\"+19199215439\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 4,
+      "execution_time": 3.7879788875579834,
+      "prompt_type": "few_shot",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Louis Liu. Their number is +19302400721.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Louis\")",
+        "TYPE(\"+19302400721\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Louis Liu\")",
+        "TYPE(\"+19302400721\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 4,
+      "execution_time": 4.093644142150879,
+      "prompt_type": "few_shot",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Lily Ibrahim. Their number is +13670190412.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Lily\")",
+        "TYPE(\"+13670190412\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Lily Ibrahim\")",
+        "TYPE(\"+13670190412\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 0.75,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 3,
+      "execution_time": 12.596383094787598,
+      "prompt_type": "self_reflection",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Carlos Garcia. Their number is +18410759822.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Carlos\")",
+        "TYPE(\"+18410759822\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Carlos Garcia\")",
+        "TYPE(\"+18410759822\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 4,
+      "execution_time": 11.980130672454834,
+      "prompt_type": "self_reflection",
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Ibrahim da Silva. Their number is +13780979216.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Ibrahim\")",
+        "TYPE(\"+13780979216\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Ibrahim da Silva\")",
+        "TYPE(\"+13780979216\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 0.75,
+      "episode_success": true,
+      "exact_matches": 3,
+      "fuzzy_matches": 3,
+      "execution_time": 15.153402090072632,
+      "prompt_type": "self_reflection",
+      "error": null
+    }
+  ],
+  "prompt_comparison": {
+    "few_shot": {
+      "avg_step_accuracy": 1.0,
+      "episode_success_rate": 1.0,
+      "avg_execution_time": 3.8981719811757407,
+      "total_episodes": 3,
+      "failed_episodes": 0
+    },
+    "self_reflection": {
+      "avg_step_accuracy": 0.8333333333333334,
+      "episode_success_rate": 1.0,
+      "avg_execution_time": 13.243305285771688,
+      "total_episodes": 3,
+      "failed_episodes": 0
+    }
+  }
+}

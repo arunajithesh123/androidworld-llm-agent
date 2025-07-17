@@ -1,0 +1,33 @@
+{
+  "task_name": "ContactsAddContact",
+  "goal": "Create a new contact for Nora Wang. Their number is +19902132306.",
+  "success": true,
+  "steps_taken": 4,
+  "actions": [
+    {
+      "step": 1,
+      "action": "CLICK(\"Add contact button\")",
+      "observation": "Android screen showing ContactsAddContact interface"
+    },
+    {
+      "step": 2,
+      "action": "TYPE(\"Nora Wang\")",
+      "observation": "Android screen showing ContactsAddContact interface"
+    },
+    {
+      "step": 3,
+      "action": "TYPE(\"+19902132306\")",
+      "observation": "Android screen showing ContactsAddContact interface"
+    },
+    {
+      "step": 4,
+      "action": "CLICK(\"Save button\")",
+      "observation": "Android screen showing ContactsAddContact interface"
+    }
+  ],
+  "error": null,
+  "task_params": {
+    "name": "Nora Wang",
+    "number": "+19902132306"
+  }
+}

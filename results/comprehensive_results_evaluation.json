@@ -1,0 +1,1080 @@
+{
+  "benchmark_summary": {
+    "total_episodes": 10,
+    "overall_step_accuracy": 1.0,
+    "overall_success_rate": 1.0,
+    "models_tested": [
+      "gpt-4"
+    ],
+    "tasks_tested": [
+      "ContactsAddContact"
+    ],
+    "avg_execution_time": 7.265073180198669,
+    "failed_episodes": 0
+  },
+  "model_comparison": {
+    "gpt-4": {
+      "avg_step_accuracy": 1.0,
+      "success_rate": 1.0,
+      "avg_execution_time": 7.265073180198669,
+      "total_episodes": 10,
+      "hallucination_rate": 0.0,
+      "common_failures": [
+        "success: 10"
+      ]
+    }
+  },
+  "task_analysis": {
+    "ContactsAddContact": {
+      "episodes": 10,
+      "avg_accuracy": 1.0,
+      "success_rate": 1.0,
+      "difficulty_ranking": "Easy",
+      "common_mistakes": []
+    }
+  },
+  "detailed_episodes": [
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Charlie Liu. Their number is +11941195117.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Charlie Liu\")",
+        "TYPE(\"+11941195117\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Charlie Liu\")",
+        "TYPE(\"+11941195117\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 4.647835731506348,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Charlie Liu\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Charlie Liu\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+11941195117\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+11941195117\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Luis dos Santos. Their number is +17203299852.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Luis dos Santos\")",
+        "TYPE(\"+17203299852\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Luis dos Santos\")",
+        "TYPE(\"+17203299852\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 3.3100550174713135,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Luis dos Santos\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Luis dos Santos\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+17203299852\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+17203299852\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Amina Ali. Their number is +13829144012.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Amina Ali\")",
+        "TYPE(\"+13829144012\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Amina Ali\")",
+        "TYPE(\"+13829144012\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 3.3555850982666016,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Amina Ali\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Amina Ali\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+13829144012\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+13829144012\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Aria dos Santos. Their number is +18190755234.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Aria dos Santos\")",
+        "TYPE(\"+18190755234\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Aria dos Santos\")",
+        "TYPE(\"+18190755234\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 3.351605176925659,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Aria dos Santos\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Aria dos Santos\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+18190755234\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+18190755234\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Mia dos Santos. Their number is +15120130296.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Mia dos Santos\")",
+        "TYPE(\"+15120130296\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Mia dos Santos\")",
+        "TYPE(\"+15120130296\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 3.527164936065674,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Mia dos Santos\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Mia dos Santos\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+15120130296\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+15120130296\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Matteo da Silva. Their number is +17850688198.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Matteo da Silva\")",
+        "TYPE(\"+17850688198\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Matteo da Silva\")",
+        "TYPE(\"+17850688198\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 3.1978209018707275,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Matteo da Silva\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Matteo da Silva\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+17850688198\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+17850688198\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Amelia Pereira. Their number is +14737798382.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Amelia Pereira\")",
+        "TYPE(\"+14737798382\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Amelia Pereira\")",
+        "TYPE(\"+14737798382\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 11.504096984863281,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Amelia Pereira\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Amelia Pereira\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+14737798382\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+14737798382\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Theodore Ferreira. Their number is +11097205363.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Theodore Ferreira\")",
+        "TYPE(\"+11097205363\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Theodore Ferreira\")",
+        "TYPE(\"+11097205363\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 14.480256080627441,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Theodore Ferreira\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Theodore Ferreira\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+11097205363\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+11097205363\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Nikola Wang. Their number is +11890374439.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Nikola Wang\")",
+        "TYPE(\"+11890374439\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Nikola Wang\")",
+        "TYPE(\"+11890374439\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 11.655078887939453,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Nikola Wang\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Nikola Wang\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+11890374439\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+11890374439\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    },
+    {
+      "task_name": "ContactsAddContact",
+      "goal": "Create a new contact for Ian Hernandez. Their number is +10899374461.",
+      "predicted_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Ian Hernandez\")",
+        "TYPE(\"+10899374461\")",
+        "CLICK(\"Save button\")"
+      ],
+      "ground_truth_actions": [
+        "CLICK(\"Add contact button\")",
+        "TYPE(\"Ian Hernandez\")",
+        "TYPE(\"+10899374461\")",
+        "CLICK(\"Save button\")"
+      ],
+      "step_accuracy": 1.0,
+      "episode_success": true,
+      "exact_matches": 4,
+      "fuzzy_matches": 4,
+      "execution_time": 13.621232986450195,
+      "llm_model": "gpt-4",
+      "prompt_type": "memory_enhanced",
+      "step_details": [
+        {
+          "step": 1,
+          "observation": "Android screen showing ContactsAddContact interface (step 1)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contacts app (open)",
+            "Add contact button (clickable)",
+            "Contact list (scrollable)",
+            "Search bar (text input)",
+            "Menu button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Add contact button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Add contact button\")"
+        },
+        {
+          "step": 2,
+          "observation": "Android screen showing ContactsAddContact interface (step 2)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (text input, focused)",
+            "Phone field (text input)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"Ian Hernandez\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"Ian Hernandez\")"
+        },
+        {
+          "step": 3,
+          "observation": "Android screen showing ContactsAddContact interface (step 3)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "New contact form",
+            "Name field (filled)",
+            "Phone field (text input, focused)",
+            "Email field (text input)",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "TYPE(\"+10899374461\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "TYPE(\"+10899374461\")"
+        },
+        {
+          "step": 4,
+          "observation": "Android screen showing ContactsAddContact interface (step 4)",
+          "ui_elements": [
+            "Navigation bar",
+            "Status bar",
+            "Back button",
+            "Contact form completed",
+            "Save button (clickable)",
+            "Cancel button (clickable)"
+          ],
+          "predicted_action": "CLICK(\"Save button\")",
+          "reasoning": "No reasoning requested",
+          "ground_truth_action": "CLICK(\"Save button\")"
+        }
+      ],
+      "failure_analysis": {
+        "failure_type": "success",
+        "specific_issues": [],
+        "suggested_improvements": [],
+        "hallucinations": [],
+        "goal_understanding": "good"
+      },
+      "interesting_behaviors": [
+        "Showed diverse action selection"
+      ],
+      "error": null
+    }
+  ],
+  "failure_patterns": {},
+  "recommendations": []
+}

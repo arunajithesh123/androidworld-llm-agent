@@ -1,0 +1,27 @@
+Goal: {goal}
+
+Current Situation (Step {step_count}/{max_steps}):
+{observation_text}
+
+Available UI Elements:
+{ui_elements_text}
+
+Previous Actions:
+{prev_actions_text}
+
+What is the next best action to achieve the goal?
+
+Available Actions:
+- CLICK("element_name") - Click on a UI element by name
+- TYPE("text") - Type text into currently focused field  
+- SCROLL("up"|"down"|"left"|"right") - Scroll in direction
+- NAVIGATE_HOME() - Go to home screen
+- NAVIGATE_BACK() - Go back
+- WAIT() - Wait for screen to load
+
+Think about what you can see on the screen and what action would help achieve the goal.
+
+Respond with exactly one action in the format shown above.
+Example: CLICK("Apps")
+
+Action:

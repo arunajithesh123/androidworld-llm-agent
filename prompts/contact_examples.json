@@ -1,0 +1,54 @@
+{
+  "contact_creation_examples": [
+    {
+      "goal": "Create a new contact for Maria Garcia with phone +15551234567",
+      "steps": [
+        {
+          "observation": "Contacts app open, main screen visible",
+          "action": "CLICK(\"Add contact button\")",
+          "reasoning": "Need to start contact creation process"
+        },
+        {
+          "observation": "New contact form, name field focused",
+          "action": "TYPE(\"Maria Garcia\")",
+          "reasoning": "Enter the full name as specified in goal"
+        },
+        {
+          "observation": "Name entered, phone field now focused",
+          "action": "TYPE(\"+15551234567\")",
+          "reasoning": "Enter the phone number exactly as provided"
+        },
+        {
+          "observation": "All required fields filled",
+          "action": "CLICK(\"Save button\")",
+          "reasoning": "Save the contact to complete the task"
+        }
+      ]
+    },
+    {
+      "goal": "Create a new contact for David Kim with phone +15559876543",
+      "steps": [
+        {
+          "observation": "Contacts app open, contact list showing",
+          "action": "CLICK(\"Add contact button\")",
+          "reasoning": "Begin adding new contact"
+        },
+        {
+          "observation": "Contact creation form displayed",
+          "action": "TYPE(\"David Kim\")",
+          "reasoning": "Input the complete name from the goal"
+        },
+        {
+          "observation": "Name field completed, cursor in phone field",
+          "action": "TYPE(\"+15559876543\")",
+          "reasoning": "Add the specified phone number"
+        },
+        {
+          "observation": "Contact information complete",
+          "action": "CLICK(\"Save button\")",
+          "reasoning": "Finalize contact creation"
+        }
+      ]
+    }
+  ]
+}
